@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("uk-open-trees")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bdd41a1a8747d54ba8046ed0147d8d53627c44c")]
 [assembly: System.Reflection.AssemblyProductAttribute("uk-open-trees")]
 [assembly: System.Reflection.AssemblyTitleAttribute("uk-open-trees")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
