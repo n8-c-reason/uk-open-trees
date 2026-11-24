@@ -1,13 +1,30 @@
 services:
   app:
+    image: localhost/uk-open-trees-app
     build:
-      context: .
-      dockerfile: Dockerfile
-#    volumes:
-#      - ../..:/workspaces:cached
+      context: ../..
+      dockerfile: .devcontainer/azure_functions_dotnet/Dockerfile
+    volumes:
+      - ../..:/workspaces/uk-open-trees:cached
     command: sleep infinity
     network_mode: service:azurite
+    depends_on:
+      - mongodb
 
   azurite:
     image: mcr.microsoft.com/azure-storage/azurite
     restart: unless-stopped
+    
+  mongodb:
+    image: mongo:8
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: devuser
+      MONGO_INITDB_ROOT_PASSWORD: devpassword
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

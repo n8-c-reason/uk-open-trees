@@ -2,6 +2,11 @@
   "name": "Azure Functions (.NET)",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
+  "runServices": [
+    "app",
+    "azurite",
+    "mongodb"
+  ],
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "forwardPorts": [
     7071,
@@ -17,13 +22,10 @@
       "version": "latest"
     }
   },
- 
+ // Cache buster for Rider
   "customizations" : {
     "jetbrains" : {
       "backend" : "Rider"
     }
-  },
-  "build": {
-  "dockerfile": "Dockerfile"
   }
 }
