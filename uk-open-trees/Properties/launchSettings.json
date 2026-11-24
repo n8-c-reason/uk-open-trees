@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "uk_open_trees": {
-      "commandName": "Project",
-      "commandLineArgs": "--port 7292",
-      "launchBrowser": false
-    }
-  }
-}
