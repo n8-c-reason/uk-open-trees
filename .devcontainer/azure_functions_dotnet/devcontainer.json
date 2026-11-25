@@ -5,7 +5,9 @@
   "runServices": [
     "app",
     "azurite",
-    "mongodb"
+    "mongodb",
+    "emulator",
+    "mssql",
   ],
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "forwardPorts": [

@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="Function.Order/Function.Order.csproj" />
   <Project Path="src/Functions/Users/Users.csproj" />
 </Solution>
